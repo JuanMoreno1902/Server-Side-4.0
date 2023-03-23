@@ -27,10 +27,13 @@ class Bill(object):
     :rtype: object
     
     """
-    def __init__(package_information, package_address, package_person):
-      self._total_paid = total_paid
-      self._card_type = card_type
-      self._type_of_financing = type_of_financing
+    self._total_paid = total_paid
+    self._card_type = card_type
+    self._type_of_financing = type_of_financing
+    self._package_information = package_information
+    self._package_address = package_address
+    self._package_person = package_person
+    
   
   @property
   def total_paid(self) -> float:
